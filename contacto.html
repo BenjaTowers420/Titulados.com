@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulados.com - Inicio</title>
+    <title>Titulados.com - Contacto</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -20,19 +20,21 @@
         </nav>
     </header>
     <main>
-        <section id="bienvenida">
-            <h2>Bienvenidos a Titulados.com</h2>
-            <p>Ayudamos a los recién egresados a encontrar su primer empleo. Ofrecemos recursos, asesoramiento y oportunidades laborales.</p>
-            <img src="assets/img/recien_egresado.jpg" alt="Bienvenida" class="responsive">
-        </section>
-        <section id="destacados">
-            <h2>Oportunidades Destacadas</h2>
-            <ul>
-                <li>Desarrollador Web Junior</li>
-                <li>Analista de Datos</li>
-                <li>Marketing Digital</li>
-            </ul>
-            <img src="assets/img/encuentra-trabajo-ideal-1080x675.jpg" alt="Oportunidades Destacadas" class="responsive">
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos utilizando el siguiente formulario:</p>
+            <form action="procesar_contacto.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>

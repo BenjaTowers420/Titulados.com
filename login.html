@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulados.com - Inicio</title>
+    <title>Titulados.com - Login</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
         <nav>
             <ul>
                 <li id="login-btn"><a href="login.html">Login</a></li>
+                <li id="register-btn"><a href="registro.html">Registrarse</a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -20,19 +21,17 @@
         </nav>
     </header>
     <main>
-        <section id="bienvenida">
-            <h2>Bienvenidos a Titulados.com</h2>
-            <p>Ayudamos a los recién egresados a encontrar su primer empleo. Ofrecemos recursos, asesoramiento y oportunidades laborales.</p>
-            <img src="assets/img/recien_egresado.jpg" alt="Bienvenida" class="responsive">
-        </section>
-        <section id="destacados">
-            <h2>Oportunidades Destacadas</h2>
-            <ul>
-                <li>Desarrollador Web Junior</li>
-                <li>Analista de Datos</li>
-                <li>Marketing Digital</li>
-            </ul>
-            <img src="assets/img/encuentra-trabajo-ideal-1080x675.jpg" alt="Oportunidades Destacadas" class="responsive">
+        <section id="login">
+            <h2>Login de Usuario</h2>
+            <form action="perfil.html" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
         </section>
     </main>
     <footer>

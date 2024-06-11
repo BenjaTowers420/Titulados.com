@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulados.com - Instituciones</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Titulados.com</h1>
+        <nav>
+            <ul>
+                <li id="login-btn"><a href="login.html">Login</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="instituciones.html">Instituciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="instituciones">
+            <h2>Instituciones</h2>
+            <p>Esta sección es para las instituciones académicas:</p>
+            <p>Formulario para ingresar observaciones sobre los alumnos:</p>
+            <form action="procesar_observaciones.php" method="post">
+                <label for="nombre-institucion">Nombre de la Institución:</label>
+                <input type="text" id="nombre-institucion" name="nombre-institucion" required>
+                
+                <label for="nombre-alumno">Nombre del Alumno:</label>
+                <input type="text" id="nombre-alumno" name="nombre-alumno" required>
+                
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones" required></textarea>
+                
+                <button type="submit">Enviar Observaciones</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Titulados.com. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
