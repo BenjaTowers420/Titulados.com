@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulados.com - Publicar Oferta</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            display: flex;
+            align-items: center;
+        }
+        header h1 .logo {
+            margin-right: 10px;
+            height: 80px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        form {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form textarea {
+            resize: vertical;
+        }
+        form button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="assets/img/tituladoslogo.png" alt="Titulados.com Logo" class="logo">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publicar_oferta.html">Publicar Oferta</a></li>
+                <li><a href="egresados.html">Egresados Calificados</a></li>
+                <li><a href="logout.html">Logout</a></li> <!-- Enlace de Logout -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="publicar-oferta">
+            <h2>Publicar Oferta de Trabajo</h2>
+            <form action="procesar_oferta.php" method="post">
+                <label for="titulo">Título del Puesto:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                
+                <label for="area">Área de Interés:</label>
+                <input type="text" id="area" name="area" required>
+                
+                <label for="empresa">Nombre de la Empresa:</label>
+                <input type="text" id="empresa" name="empresa" required>
+                
+                <label for="descripcion">Descripción del Puesto:</label>
+                <textarea id="descripcion" name="descripcion" rows="6" required></textarea>
+                
+                <button type="submit">Publicar Oferta</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Titulados.com. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

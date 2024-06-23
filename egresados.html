@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulados.com - Egresados Más Calificados</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            display: flex;
+            align-items: center;
+        }
+        header h1 .logo {
+            margin-right: 10px;
+            height: 80px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .egresados {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .egresado {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33% - 40px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .egresado img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .egresado h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .egresado p {
+            margin: 5px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="assets/img/tituladoslogo.png" alt="Titulados.com Logo" class="logo">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="publicar_oferta.html">Publicar Oferta</a></li>
+                <li><a href="egresados.html">Egresados Calificados</a></li>
+                <li><a href="logout.html">Logout</a></li> <!-- Enlace de Logout -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="egresados-calificados">
+            <h2>Egresados Más Calificados</h2>
+            <div class="egresados">
+                <div class="egresado">
+                    <img src="assets/img/HuevitoRey.webp" alt="Foto de Juan Pérez">
+                    <h3>Juan Pérez</h3>
+                    <p><strong>Profesión:</strong> Programador</p>
+                    <p><strong>Nivel de compatibilidad:</strong> 92%</p>
+                    <p><strong>Áreas de Interés:</strong> Desarrollo de software, Análisis de datos</p>
+                </div>
+                <div class="egresado">
+                    <img src="assets/img/jan.jpg" alt="Foto de María García">
+                    <h3>María García</h3>
+                    <p><strong>Profesión:</strong> Diseñadora Gráfica y Programadora</p>
+                    <p><strong>Nivel de compatibilidad:</strong> 94%</p>
+                    <p><strong>Áreas de Interés:</strong> Diseño UX/UI, Ilustración, JavaScript</p>
+                </div>
+                <div class="egresado">
+                    <img src="assets/img/jb.jpg" alt="Foto de Carlos López">
+                    <h3>Carlos López</h3>
+                    <p><strong>Profesión:</strong> Ingeniero en Informática</p>
+                    <p><strong>Nivel de compatibilidad:</strong> 89%</p>
+                    <p><strong>Áreas de Interés:</strong> Diseño responsivo, Creación de paginas web</p>
+                </div>
+                <!-- Añadir más egresados aquí -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Titulados.com. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

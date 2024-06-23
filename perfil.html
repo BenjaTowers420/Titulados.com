@@ -5,29 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulados.com - Perfil</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            display: flex;
+            align-items: center;
+        }
+        header h1 .logo {
+            margin-right: 10px;
+            height: 80px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .perfil {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .perfil .info {
+            flex: 1;
+        }
+        .perfil .habilidades {
+            flex: 1;
+            text-align: center;
+        }
+        .habilidades h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .habilidades .circulo {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            color: #007bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            margin: 0 auto;
+            position: relative;
+        }
+        .habilidades .circulo::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            border-left: 1px solid #007bff;
+            height: 100%;
+            width: 0%;
+        }
+        .habilidades .circulo::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            border-top: 1px solid #007bff;
+            width: 100%;
+            height: 0%;
+        }
+        .recomendaciones {
+            margin-top: 20px;
+        }
+        .recomendaciones h3 {
+            font-size: 1.2em;
+        }
+        .recomendaciones ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recomendaciones li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Titulados.com</h1>
+        <h1>
+            <img src="assets/img/tituladoslogo.png" alt="Titulados.com Logo" class="logo">
+        </h1>
         <nav>
             <ul>
+                <li id="login-btn"><a href="login.html">Juan Perez</a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="instituciones.html">Instituciones</a></li>
-                <li><a href="index.html">Logout</a></li> <!-- Enlace de Logout -->
+                <li><a href="logout.html">Logout</a></li> <!-- Enlace de Logout -->
             </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
-            <h2>Bienvenido, [Nombre del Usuario]</h2>
-            <p>En esta sección podrás ver las ofertas de empleo que coinciden con tu perfil:</p>
-            <ul>
-                <li>Oferta 1</li>
-                <li>Oferta 2</li>
-                <li>Oferta 3</li>
-            </ul>
+            <h2>Perfil de Usuario</h2>
+            <div class="perfil">
+                <div class="info">
+                    <h3>Nombre: Juan Pérez</h3>
+                    <p><strong>Profesión:</strong> Ingeniero de Sistemas</p>
+                    <p><strong>Edad:</strong> 24 años</p>
+                    <p><strong>Principales competencias:</strong> Ingles y Programación </p>
+                    <p><strong>Ubicación:</strong> Santiago</p>
+                </div>
+                <div class="habilidades">
+                    <h3>Habilidades</h3>
+                    <div class="circulo">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                            <div style="margin-bottom: 10px;">85%</div>
+                            <div style="width: 80%; height: 80%; background-color: #007bff; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <div style="position: absolute; width: 100%; height: 100%; clip: rect(0, 50%, 100%, 0);">
+                                    <div style="position: absolute; width: 100%; height: 100%; clip: rect(0, 100%, 100%, 50%);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recomendaciones">
+                <h3>Recomendaciones</h3>
+                <ul>
+                    <li>Consultar oportunidades en empresas de tecnología en Ciudad de México.</li>
+                    <li>Actualizar periódicamente el perfil con nuevas habilidades y proyectos.</li>
+                    <li>Explorar cursos y certificaciones en plataformas como Coursera y edX.</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>

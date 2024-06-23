@@ -14,6 +14,16 @@ header {
     align-items: center;
 }
 
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header h1 .logo {
+    margin-right: 10px;
+    height: 80px; /* Ajusta este valor según el tamaño que desees para la imagen */
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -132,4 +142,55 @@ h1, h2 {
 /* Estilos específicos para las ofertas */
 #perfil ul li {
     margin-bottom: 10px;
+}
+
+/* Estilos específicos para la imagen de bienvenida */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.search-bar h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.search-bar form {
+    display: inline-block;
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar input[type="text"] {
+    width: 300px; /* Ajusta el ancho del input según sea necesario */
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
 }
